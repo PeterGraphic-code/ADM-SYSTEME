@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistant Virtuel - Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="header-content">
+                <div class="bot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="header-info">
+                    <h2>Assistant Virtuel</h2>
+                    <p>En ligne • Prêt à vous aider</p>
+                </div>
+            </div>
+            <button class="minimize-btn" id="minimizeBtn">
+                <i class="fas fa-minus"></i>
+            </button>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="message-content">
+                    <i class="fas fa-robot message-icon"></i>
+                    <div class="message-bubble">
+                        Bonjour ! Je suis votre assistant virtuel. Comment puis-je vous aider aujourd'hui ?
+                    </div>
+                </div>
+                <div class="message-time">Maintenant</div>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <div class="input-container">
+                <textarea 
+                    id="userInput" 
+                    placeholder="Ecrivez votre message ici..." 
+                    rows="1"
+                    maxlength="500"
+                ></textarea>
+                <button id="sendBtn" class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="input-footer">
+                <span class="char-count">0/500</span>
+                <span class="typing-indicator" id="typingIndicator">
+                    <i class="fas fa-ellipsis-h"></i> L'assistant écrit...
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

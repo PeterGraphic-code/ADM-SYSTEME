@@ -140,15 +140,9 @@ class Chatbot {
             return 'Je ne peux pas encore acceder aux donnees meteorologiques en temps reel, mais je vous recommande de consulter une application meteorologique pour des informations precises';
         }
         
-        const defaultResponses = [
-            'Interessant Pouvez-vous m\'en dire plus',
-            'Je comprends. Comment puis-je vous aider avec cela',
-            'Merci de partager cela avec moi. Voulez-vous que je vous aide avec autre chose',
-            'C\'est une bonne question Je vais essayer de vous aider du mieux que je peux',
-            'Je suis la pour vous ecouter et vous aider. Continuez'
-        ];
+        const defaultResponse = 'Je ne suis pas sur de comprendre, pouvez-vous reformuler votre question'
         
-        return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+        return defaultResponse
     }
     
     getRandomResponse(category) {
